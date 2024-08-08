@@ -32,3 +32,11 @@ Testing and code quality.
 pytest -vv
 mypy converters.py --strict
 ```
+
+# Creating Source or Binary Distribution
+
+```bash
+# source distribution (has Python source code)
+$ python setup.py sdist
+$ python -m pip install dist/converters-0.0.1.tar.gz 
+```

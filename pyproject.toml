@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "converters"
+version = "0.0.1"
+
+# These should be looser compared to requirements.txt (commonly pinned)
+# On "library vs app"
+# Library should be looser for user convenience
+# App should have tighter dependencies for reproducible development
+# dependencies = [
+#     "typer",
+# ]
+
+# Example usage: `pip install --editable .[dev]`
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pytest",
+    "ruff",
+    "mypy"
+]

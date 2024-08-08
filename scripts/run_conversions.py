@@ -1,8 +1,7 @@
 # Hacky way to avoid overriding PYTHONPATH or use a package
 # Relative import must change (.. vs .) depending where the script is run from
-import sys
-
-sys.path.insert(0, ".")
+# import sys
+# sys.path.insert(0, ".")
 
 from converters import celsius_to_fahrenheit, fahrenheit_to_celsius
 
