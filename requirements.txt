@@ -1,0 +1,5 @@
+black
+hypothesis
+mypy
+pytest
+ruff
