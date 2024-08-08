@@ -23,6 +23,12 @@ python3 -m venv .venv
 source .venv/bin/activate
 (.venv) python -m pip install --upgrade pip
 (.venv) python -m pip install -r requirements.txt
+
+# Installing from git
+    # URL takes format: git+ssh://git@github.com/<user>/<repo>.git@<branch>#egg=<package_name>
+    # change to HTTPS if you use password-based authentication with your GitHub account
+(.venv) python -m pip install git+ssh://git@github.com/paulzuradzki/chipy-minimal-python-package-demo.git@main#egg=converters
+
 ```
 
 ### Testing
