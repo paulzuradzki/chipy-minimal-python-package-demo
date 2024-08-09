@@ -1,7 +1,7 @@
 import sys # demo un-used import for linter
 
 def celsius_to_fahrenheit(celsius):
-    return 0
+    return celsius * 9 / 5 + 32
 
 
 def fahrenheit_to_celsius(fahrenheit: float|int) -> float:
